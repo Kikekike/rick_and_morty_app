@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:rickandmortyapp/ui/components/custom_top_nav_bar.dart';
+import 'package:rickandmortyapp/ui/pages/characters_list_page.dart';
+import 'package:rickandmortyapp/ui/pages/home_page.dart';
+import 'package:rickandmortyapp/ui/widgets/custom_principal_text.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,27 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});  
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World!',
-        ),
-      ),
+      home: const HomePage(),
     );
   }
 }
