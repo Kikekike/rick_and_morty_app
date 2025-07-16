@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:rickandmortyapp/theme/app_images.dart';
 import 'package:rickandmortyapp/ui/components/home_card_button.dart';
 import 'package:rickandmortyapp/ui/layout/base_layout.dart';
-import 'package:rickandmortyapp/ui/pages/characters_list_page.dart';
-import 'package:rickandmortyapp/ui/pages/episodes_list_page.dart';
-import 'package:rickandmortyapp/ui/pages/locations_list_page.dart';
+import 'package:rickandmortyapp/ui/pages/character_list_page.dart';
+import 'package:rickandmortyapp/ui/pages/episode_list_page.dart';
+import 'package:rickandmortyapp/ui/pages/location_list_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const CharactersListPage(),
+                    builder: (context) => const CharacterListPage(),
                   ),
                 );
               },
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const LocationsListPage(),
+                    builder: (context) => const LocationListPage(),
                   ),
                 );
               },
@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const EpisodesListPage(),
+                    builder: (context) => const EpisodeListPage(),
                   ),
                 );
               },

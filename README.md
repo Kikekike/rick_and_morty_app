@@ -17,3 +17,10 @@ samples, guidance on mobile development, and a full API reference.
 
 - How to use FlutLab? Please, view our https://flutlab.io/docs
 - Join the discussion and conversation on https://flutlab.io/residents
+
+## API Used
+
+This project uses the Rick and Morty API as a data source to display characters and episodes.
+The Rick and Morty API is an open-source project created by Axel Fuhrmann. All rights to the Rick and Morty series belong to their respective creators and distributors.
+
+- View on https://rickandmortyapi.com/ 
