@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:rickandmortyapp/ui/layout/base_layout.dart';
 
-class LocationsListPage extends StatefulWidget {
-  const LocationsListPage({Key? key}) : super(key: key);
+class EpisodeListPage extends StatefulWidget {
+  const EpisodeListPage({Key? key}) : super(key: key);
 
   @override
-  State<LocationsListPage> createState() => _LocationsListPageState();
+  State<EpisodeListPage> createState() => _EpisodeListPageState();
 }
 
-class _LocationsListPageState extends State<LocationsListPage> {
+class _EpisodeListPageState extends State<EpisodeListPage> {
   @override
   Widget build(BuildContext context) {
     return BaseLayout(
-        title: "Locations List",
+        title: "Episode List",
         showBackButton: true,
         bp: 10,
         child: Container());

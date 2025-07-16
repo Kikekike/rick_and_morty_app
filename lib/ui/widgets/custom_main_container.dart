@@ -24,7 +24,7 @@ class CustomMainContainer extends StatelessWidget {
           color: AppColors.cardTitleColor,
           width: 3,
         ),
-        borderRadius: BorderRadius.circular(0), // Opcional: bordes redondeados
+        borderRadius: BorderRadius.circular(0),
       ),
       margin: EdgeInsets.only(bottom: mb),
       padding: EdgeInsets.only(bottom: pb, top: pt, left: pl, right: pr),

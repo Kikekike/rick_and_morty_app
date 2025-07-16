@@ -6,12 +6,14 @@ class BaseLayout extends StatelessWidget {
   final String title;
   final Widget child;
   final double bp;
+  final double tp;
   final bool showBackButton;
 
   const BaseLayout(
       {required this.title,
       required this.child,
       this.bp = 50,
+      this.tp = 24,
       this.showBackButton = false,
       super.key});
 
@@ -25,7 +27,7 @@ class BaseLayout extends StatelessWidget {
       ),
       body: SafeArea(
           child: Padding(
-        padding: EdgeInsets.only(left: 24, right: 24, top: 24, bottom: bp),
+        padding: EdgeInsets.only(left: 24, right: 24, top: tp, bottom: bp),
         child: child,
       )),
     );

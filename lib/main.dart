@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rickandmortyapp/ui/components/custom_top_nav_bar.dart';
-import 'package:rickandmortyapp/ui/pages/characters_list_page.dart';
 import 'package:rickandmortyapp/ui/pages/home_page.dart';
-import 'package:rickandmortyapp/ui/widgets/custom_principal_text.dart';
 
 void main() => runApp(MyApp());
 
