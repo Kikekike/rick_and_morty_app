@@ -1,7 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:rickandmortyapp/services/graphql/graphql_client.dart';
 import 'package:rickandmortyapp/ui/pages/home_page.dart';
+import 'package:graphql_flutter/graphql_flutter.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await initHiveForFlutter();
+
+  runApp(
+    GraphQLProvider(
+      client: ValueNotifier(GraphQLService.client),
+      child: const MyApp(),
+    ),
+  );
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

@@ -4,7 +4,7 @@ import 'package:rickandmortyapp/models/character_model.dart';
 import 'package:rickandmortyapp/services/character_service.dart';
 import 'package:rickandmortyapp/theme/app_colors.dart';
 import 'package:rickandmortyapp/ui/components/character_card.dart';
-import 'package:rickandmortyapp/ui/components/character_search_bar/character_search_bar.dart';
+import 'package:rickandmortyapp/ui/components/custom_search_bar/custom_search_bar.dart';
 import 'package:rickandmortyapp/ui/layout/base_layout.dart';
 import 'package:rickandmortyapp/ui/widgets/custom_principal_text.dart';
 
@@ -92,7 +92,7 @@ class _CharacterListPageState extends State<CharacterListPage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CharacterSearchBar(
+            CustomSearchBar(
                 controller: _searchController,
                 selectedStatus: _selectedStatus,
                 onSearchChanged: (value) {
@@ -111,8 +111,7 @@ class _CharacterListPageState extends State<CharacterListPage> {
                   ? const Padding(
                       padding: const EdgeInsets.only(top: 15),
                       child: CustomPrincipalText(
-                        text:
-                            "Oops! We couldn't find any results. Try again later or check your search.",
+                        text: AppStrings.oopsError,
                         color: Colors.white,
                       ),
                     )

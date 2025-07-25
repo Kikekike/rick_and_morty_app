@@ -6,7 +6,8 @@ import 'package:rickandmortyapp/ui/widgets/status_indicator.dart';
 class StatusIcon extends StatelessWidget {
   final String status;
 
-  const StatusIcon({Key? key, required this.status}) : super(key: key);
+  const StatusIcon({Key? key, this.status = AppStrings.statusAny})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

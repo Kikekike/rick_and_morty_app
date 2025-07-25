@@ -1,7 +1,7 @@
 class AppStrings {
   static const String appTitle = 'Rick and Morty App';
 
-  static const String searchHint = 'Search character';
+  static const String searchHintCharacter = 'Search character';
   static const String statusAny = 'any';
   static const String statusAlive = 'alive';
   static const String statusDead = 'dead';
@@ -12,4 +12,9 @@ class AppStrings {
   static const String gender = "Gender";
   static const String origin = "Origin";
   static const String lastLocation = "Last location";
+
+  static const String searchHintLocation = 'Search location';
+
+  static const String oopsError =
+      '"Oops! We couldnt find any results. Try again later or check your search.';
 }

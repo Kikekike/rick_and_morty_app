@@ -2,21 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:rickandmortyapp/constants/strings.dart';
 import 'package:rickandmortyapp/theme/app_colors.dart';
 import 'package:rickandmortyapp/theme/app_text_styles.dart';
-import 'package:rickandmortyapp/ui/components/character_search_bar/status_popup_menu.dart';
+import 'package:rickandmortyapp/ui/components/custom_search_bar/status_popup_menu.dart';
 
-class CharacterSearchBar extends StatelessWidget {
+class CustomSearchBar extends StatelessWidget {
   final TextEditingController controller;
   final String selectedStatus;
   final Function(String) onSearchChanged;
-  final Function(String) onStatusSelected;
+  final Function(String)? onStatusSelected;
+  final String hintText;
+  final bool hasStatus;
 
-  const CharacterSearchBar({
-    Key? key,
-    required this.controller,
-    required this.selectedStatus,
-    required this.onSearchChanged,
-    required this.onStatusSelected,
-  }) : super(key: key);
+  const CustomSearchBar(
+      {Key? key,
+      required this.controller,
+      this.selectedStatus = AppStrings.statusAny,
+      required this.onSearchChanged,
+      this.onStatusSelected,
+      this.hintText = AppStrings.searchHintCharacter,
+      this.hasStatus = true})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +51,7 @@ class CharacterSearchBar extends StatelessWidget {
                     fontSize: 17,
                     color: AppColors.cardTitleColor,
                   ),
-                  hintText: AppStrings.searchHint,
+                  hintText: hintText,
                   border: InputBorder.none,
                   counterText: '',
                 ),
@@ -55,10 +59,11 @@ class CharacterSearchBar extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 5),
-            StatusPopupMenu(
-              selectedStatus: selectedStatus,
-              onStatusSelected: onStatusSelected,
-            ),
+            if (hasStatus)
+              StatusPopupMenu(
+                selectedStatus: selectedStatus,
+                onStatusSelected: onStatusSelected,
+              ),
           ],
         ),
       ),
