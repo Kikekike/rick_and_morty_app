@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:rickandmortyapp/constants/strings.dart';
 import 'package:rickandmortyapp/theme/app_colors.dart';
-import 'package:rickandmortyapp/ui/components/character_search_bar/status_icon.dart';
+import 'package:rickandmortyapp/ui/components/custom_search_bar/status_icon.dart';
 import 'package:rickandmortyapp/ui/widgets/custom_child_menu_item.dart';
 
 class StatusPopupMenu extends StatelessWidget {
   final String selectedStatus;
-  final Function(String) onStatusSelected;
+  final Function(String)? onStatusSelected;
 
   const StatusPopupMenu({
     Key? key,
