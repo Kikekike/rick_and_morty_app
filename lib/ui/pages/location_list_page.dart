@@ -9,7 +9,7 @@ import 'package:rickandmortyapp/ui/layout/base_layout.dart';
 import 'package:rickandmortyapp/ui/widgets/custom_principal_text.dart';
 
 class LocationListPage extends StatefulWidget {
-  const LocationListPage({Key? key}) : super(key: key);
+  const LocationListPage({super.key});
 
   @override
   State<LocationListPage> createState() => _LocationListPageState();
@@ -18,7 +18,7 @@ class LocationListPage extends StatefulWidget {
 class _LocationListPageState extends State<LocationListPage> {
   final ScrollController _scrollController = ScrollController();
   final TextEditingController _searchController = TextEditingController();
-  List<LocationModel> _locations = [];
+  final List<LocationModel> _locations = [];
   int _currentPage = 1;
   bool _isLoading = false;
   bool _hasMore = true;

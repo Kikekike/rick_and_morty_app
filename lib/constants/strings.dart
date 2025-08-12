@@ -17,4 +17,12 @@ class AppStrings {
 
   static const String oopsError =
       '"Oops! We couldnt find any results. Try again later or check your search.';
+  static const String oopsErrorResidents = 'Oops! Error loading residents.';
+  static const String noResidentsFound = 'No residents found';
+
+  static const String titleLocationDetailsPage = 'Location details';
+  static const String type = 'Type';
+  static const String dimension = 'Dimension';
+  static const String created = 'Created';
+  static const String residents = 'Residents';
 }
