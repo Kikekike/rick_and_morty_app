@@ -32,7 +32,9 @@ class CharacterModel {
 
   factory CharacterModel.fromJson(Map<String, dynamic> json) {
     return CharacterModel(
-      id: json['id'],
+      id: json['id'] is int
+          ? json['id']
+          : int.tryParse(json['id'].toString()) ?? -1,
       imagePath: json['image'],
       name: json['name'],
       species: json['species'],

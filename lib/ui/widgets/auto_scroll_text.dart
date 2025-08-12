@@ -27,7 +27,7 @@ class AutoScrollText extends StatelessWidget {
           final isOverflowing = textPainter.didExceedMaxLines;
 
           return SizedBox(
-            height: style.fontSize! + 6, // Ajuste visual
+            height: style.fontSize! + 6,
             width: constraints.maxWidth,
             child: isOverflowing
                 ? Marquee(

@@ -10,9 +10,11 @@ import 'package:rickandmortyapp/ui/widgets/status_indicator.dart';
 
 class CharacterCard extends StatelessWidget {
   final CharacterModel character;
+  final bool hasBorder;
 
   const CharacterCard({
     required this.character,
+    this.hasBorder = true,
     super.key,
   });
 
@@ -28,6 +30,7 @@ class CharacterCard extends StatelessWidget {
         );
       },
       child: CustomMainContainer(
+        hasBorder: hasBorder,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

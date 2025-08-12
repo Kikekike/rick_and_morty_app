@@ -13,6 +13,7 @@ class LocationQueries {
           residents {
             id
           }
+          created
         }
       }
     }
