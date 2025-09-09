@@ -36,7 +36,8 @@ class EpisodeListPage extends StatelessWidget {
             builder: (context, controller, _) {
               if (controller.hasSearched &&
                   !controller.isLoading &&
-                  (controller.hasError || controller.episodes.isEmpty)) {
+                  controller.episodes.isEmpty &&
+                  controller.hasError) {
                 return const Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: CustomPrincipalText(

@@ -6,6 +6,7 @@ class AppStrings {
   static const String characterListTitle = 'Character List';
   static const String locationDetailsTitle = 'Location details';
   static const String locationListTitle = 'Location List';
+  static const String episodeDetailsTitle = 'Episode details';
 
   static const String characters = 'Characters';
   static const String locations = 'Locations';
@@ -44,4 +45,8 @@ class AppStrings {
   static const String wordUnknownLocation = 'Unknown Location';
   static const String wordUnknownEpisode = 'Unknown Episode';
   static const String wordNumberUnknownEpisode = 'S00E00';
+
+  static const String airDate = 'Air date';
+  static const String episode = 'Episode';
+  static const String characterInEpisode = 'Characters in episode';
 }
