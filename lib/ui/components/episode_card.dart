@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rickandmortyapp/models/episode_model.dart';
 import 'package:rickandmortyapp/theme/app_text_styles.dart';
+import 'package:rickandmortyapp/ui/pages/episode_list/episode_details_page.dart';
 import 'package:rickandmortyapp/ui/widgets/auto_scroll_text.dart';
 import 'package:rickandmortyapp/ui/widgets/custom_main_container.dart';
 import 'package:rickandmortyapp/ui/widgets/custom_principal_text.dart';
@@ -14,7 +15,14 @@ class EpisodeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => EpisodeDetailsPage(episode: episode),
+          ),
+        );
+      },
       child: SizedBox(
         width: double.infinity,
         child: CustomMainContainer(

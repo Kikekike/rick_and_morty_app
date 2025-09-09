@@ -79,6 +79,7 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
                           text: "${AppStrings.residents} :",
                           color: Colors.white,
                           fontSize: 16,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
                       const SizedBox(height: 10),
