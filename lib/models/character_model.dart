@@ -1,3 +1,4 @@
+import 'package:rickandmortyapp/constants/strings.dart';
 import 'package:rickandmortyapp/models/origin_location_model.dart';
 import 'package:rickandmortyapp/theme/app_images.dart';
 
@@ -18,16 +19,16 @@ class CharacterModel {
   CharacterModel({
     this.id = -1,
     this.imagePath = AppImages.homeOne,
-    this.name = "Character Name",
-    this.species = "Human",
-    this.status = "Alive",
-    this.type = "",
-    this.gender = "",
+    this.name = AppStrings.characterName,
+    this.species = AppStrings.human,
+    this.status = AppStrings.wordAlive,
+    this.type = AppStrings.emptySpace,
+    this.gender = AppStrings.emptySpace,
     this.origin = const OriginLocationModel(),
     this.location = const OriginLocationModel(),
     this.episodes = const [],
-    this.url = "",
-    this.created = "",
+    this.url = AppStrings.emptySpace,
+    this.created = AppStrings.emptySpace,
   });
 
   factory CharacterModel.fromJson(Map<String, dynamic> json) {

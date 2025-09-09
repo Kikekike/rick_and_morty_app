@@ -14,6 +14,7 @@ dependencies:
   marquee: ^2.2.3
   graphql_flutter: ^5.1.2
   intl: ^0.18.1
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:

@@ -24,7 +24,7 @@ class _LocationDetailsPageState extends State<LocationDetailsPage> {
         showBackButton: true,
         tp: 12,
         bp: 24,
-        title: AppStrings.titleLocationDetailsPage,
+        title: AppStrings.locationDetailsTitle,
         child: SizedBox(
           width: double.infinity,
           child: SingleChildScrollView(

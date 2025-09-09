@@ -85,7 +85,7 @@ class _CharacterListPageState extends State<CharacterListPage> {
   @override
   Widget build(BuildContext context) {
     return BaseLayout(
-        title: "Character List",
+        title: AppStrings.characterListTitle,
         showBackButton: true,
         bp: 10,
         tp: 20,

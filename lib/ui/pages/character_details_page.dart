@@ -26,7 +26,7 @@ class _CharacterDetailsPageState extends State<CharacterDetailsPage> {
         : widget.character.species;
 
     return BaseLayout(
-        title: "Character details",
+        title: AppStrings.characterDetailsTitle,
         showBackButton: true,
         bp: 0,
         tp: 0,
