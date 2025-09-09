@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:rickandmortyapp/constants/strings.dart';
 import 'package:rickandmortyapp/theme/app_images.dart';
 import 'package:rickandmortyapp/ui/components/home_card_button.dart';
 import 'package:rickandmortyapp/ui/layout/base_layout.dart';
 import 'package:rickandmortyapp/ui/pages/character_list_page.dart';
-import 'package:rickandmortyapp/ui/pages/episode_list_page.dart';
+import 'package:rickandmortyapp/ui/pages/episode_list/episode_list_controller.dart';
+import 'package:rickandmortyapp/ui/pages/episode_list/episode_list_page.dart';
 import 'package:rickandmortyapp/ui/pages/location_list_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,12 +20,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return BaseLayout(
-        title: "Home",
+        title: AppStrings.homeTitle,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             HomeCardButton(
-              title: "Characters",
+              title: AppStrings.characters,
               onTap: () {
                 Navigator.push(
                   context,
@@ -34,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 25),
             HomeCardButton(
-              title: "Locations",
+              title: AppStrings.locations,
               imagePath: AppImages.homeTwo,
               onTap: () {
                 Navigator.push(
@@ -47,13 +50,16 @@ class _HomePageState extends State<HomePage> {
             ),
             const SizedBox(height: 25),
             HomeCardButton(
-              title: "Episodes",
+              title: AppStrings.episodes,
               imagePath: AppImages.homeThree,
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const EpisodeListPage(),
+                    builder: (_) => ChangeNotifierProvider(
+                      create: (_) => EpisodeListController(),
+                      child: const EpisodeListPage(),
+                    ),
                   ),
                 );
               },

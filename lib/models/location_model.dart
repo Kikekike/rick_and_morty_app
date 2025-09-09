@@ -1,3 +1,5 @@
+import 'package:rickandmortyapp/constants/strings.dart';
+
 class LocationModel {
   final int id;
   final String name;
@@ -9,12 +11,12 @@ class LocationModel {
 
   LocationModel({
     this.id = -1,
-    this.name = "Unknown Location",
-    this.type = "Unknown",
-    this.dimension = "Unknown",
+    this.name = AppStrings.wordUnknownLocation,
+    this.type = AppStrings.wordUnknown,
+    this.dimension = AppStrings.wordUnknown,
     this.residents = const [],
-    this.url = "",
-    this.created = "",
+    this.url = AppStrings.emptySpace,
+    this.created = AppStrings.emptySpace,
   });
 
   factory LocationModel.fromJson(Map<String, dynamic> json) {

@@ -88,7 +88,7 @@ class _LocationListPageState extends State<LocationListPage> {
   @override
   Widget build(BuildContext context) {
     return BaseLayout(
-      title: "Location List",
+      title: AppStrings.locationListTitle,
       showBackButton: true,
       bp: 10,
       tp: 20,
