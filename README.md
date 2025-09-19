@@ -46,8 +46,6 @@ The Rick and Morty API is an open-source project created by Axel Fuhrmann. All r
 <img src="https://github.com/user-attachments/assets/b558a7de-2a72-467b-b7ae-aeab2ae2cef9" height="400">
 <img src="https://github.com/user-attachments/assets/8381004f-f312-4910-97ad-f96e979903b5" height="400">
 
-
-
 ## Emulator Views
 
 * **Android** (360x640)
@@ -74,15 +72,33 @@ The Rick and Morty API is an open-source project created by Axel Fuhrmann. All r
 <img height="400" alt="2  428 x 926" src="https://github.com/user-attachments/assets/1a56aeee-fb86-44ad-aeea-fe53f3518825" />
 <img height="400" alt="3  428 x 926" src="https://github.com/user-attachments/assets/4d26d6a0-cc88-49c7-a5e8-24dbaefbe9d9" />
 
+## 🧠 Applied Best Practices
 
+* Separation of logic and UI
+* State management with `Provider`
+* Reusable custom widgets
+* Code modularization
+* Structured navigation
+* Responsiveness using `Expanded`, `Flexible`, `MediaQuery`, etc.
+* `BaseLayout` for visual consistency across pages
 
+## 🔗 Useful Resources
 
+* [Flutter Codelab](https://flutter.dev/docs/get-started/codelab)
+* [Flutter Cookbook](https://flutter.dev/docs/cookbook)
+* [Flutter Docs](https://flutter.dev/docs)
+* [FlutLab Docs](https://flutlab.io/docs)
+* [Rick and Morty API](https://rickandmortyapi.com/)
 
+## 🛠️ IDE Used
 
+Project developed in **FlutLab**, an online IDE for Flutter that allows compiling, testing, and sharing projects directly from the browser.
 
 ## Getting Started: FlutLab - Flutter Online IDE
 
 - How to use FlutLab? Please, view our https://flutlab.io/docs
 - Join the discussion and conversation on https://flutlab.io/residents
 
+# 📌 Final Notes
 
+This project showcases how to build a complete Flutter app with a focus on scalability, maintainability, and user experience. If you're interested in collaborating or have suggestions, I'd love to hear from you!
