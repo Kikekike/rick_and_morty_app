@@ -37,6 +37,10 @@ flutter:
   
   assets:
     - assets/images/
+  
+dependency_overrides:
+  connectivity_plus: ^5.0.2
+  
   # fonts:
   #   - family: Schyler
   #     fonts:

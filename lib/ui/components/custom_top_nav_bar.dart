@@ -11,11 +11,12 @@ class CustomTopNavBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double topPadding = MediaQuery.of(context).padding.top;
+
     return Container(
-      height: preferredSize.height,
+      height: preferredSize.height + topPadding,
       color: AppColors.topNavBarColor,
-      //alignment: Alignment.center,
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+      padding: EdgeInsets.only(top: topPadding, left: 16, right: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -44,5 +45,5 @@ class CustomTopNavBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(40);
+  Size get preferredSize => const Size.fromHeight(56);
 }
